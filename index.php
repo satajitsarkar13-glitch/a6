@@ -25,8 +25,9 @@
 <body>
 
     <!-- Header Navigation -->
+        <!-- Header Navigation -->
     <header class="site-header">
-        <div class="container nav-inner">
+        <div class="nav-inner">
             <a href="index.php" class="brand-logo">
                 <div class="brand-crest-mark">SABLE <span>&amp;</span> CREST</div>
                 <div class="brand-subtext">ATELIER DE MAROQUINERIE</div>
@@ -34,11 +35,10 @@
             
             <nav class="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="index.php" class="nav-link active">Atelier</a></li>
+                    <li><a href="index.php" class="nav-link active">Home</a></li>
                     <li><a href="#heritage" class="nav-link">Heritage</a></li>
                     <li><a href="#collections" class="nav-link">Collections</a></li>
                     <li><a href="#customizer" class="nav-link">Bespoke</a></li>
-                    <li><a href="#craftsmanship" class="nav-link">Craftsmanship</a></li>
                     <li><a href="about.html" class="nav-link">About Us</a></li>
                     <li><a href="blog.html" class="nav-link">Journal</a></li>
                     <li><a href="contact.html" class="nav-link">Concierge</a></li>
@@ -46,7 +46,7 @@
             </nav>
             
             <div class="nav-actions">
-                <a href="#customizer" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.8rem;">Commission Tote</a>
+                <a href="#customizer" class="btn btn-primary">Commission Tote</a>
             </div>
         </div>
     </header>

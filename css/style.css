@@ -1127,3 +1127,132 @@ img {
     display: flex;
     align-items: center;
 }
+
+
+/* ==========================================================================
+   UPDATED LUXURY ATELIER HEADER STYLES
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--color-ecru-border);
+  box-shadow: 0 4px 20px rgba(18, 19, 22, 0.04);
+  transition: all var(--transition-fast);
+}
+
+.site-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 8px 25px rgba(18, 19, 22, 0.08);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.brand-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  flex-shrink: 0;
+  margin-right: 2.5rem;
+}
+
+.brand-crest-mark {
+  font-family: var(--font-accent);
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--color-obsidian);
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.brand-crest-mark span {
+  color: var(--color-cognac);
+}
+
+.brand-subtext {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--color-muted-gray);
+  margin-top: 2px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-charcoal);
+  padding: 0.4rem 0;
+  white-space: nowrap;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-cognac);
+  transition: width var(--transition-fast);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 2.5rem;
+}
+
+.nav-actions .btn {
+  padding: 0.75rem 1.6rem;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .nav-links { gap: 1.1rem; }
+  .brand-logo { margin-right: 1.5rem; }
+  .nav-actions { margin-left: 1.5rem; }
+}
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .mobile-menu-toggle { display: block; }
+}
